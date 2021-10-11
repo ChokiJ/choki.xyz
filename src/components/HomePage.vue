@@ -36,9 +36,15 @@ h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     animation: h1anime 1s ease-in-out;
+    -webkit-animation: h1anime 1s ease-in-out;
 }
 
 @keyframes h1anime {
+    0% {font-variation-settings: 'wght' 400}
+    100% {font-variation-settings: 'wght' 900}
+    
+}
+@-webkit-keyframes h1anime {
     0% {font-variation-settings: 'wght' 400}
     100% {font-variation-settings: 'wght' 900}
     

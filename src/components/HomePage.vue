@@ -24,7 +24,6 @@
 </template>
 
 <style>
-
 h1 {
     font-family: Playfair Display Regular;
     font-style: normal;
@@ -35,19 +34,25 @@ h1 {
     color: #2c3e50;
     margin-bottom: 0px;
     margin-top: 0px;
-    animation: h1anime 1s ease-in-out;
-    -webkit-animation: h1anime 1s ease-in-out;
+    -webkit-animation: 2s ease h1anime;
+    animation: 2s ease h1anime;
 }
 
-@keyframes h1anime {
-    0% {font-variation-settings: 'wght' 400}
-    100% {font-variation-settings: 'wght' 900}
-    
-}
 @-webkit-keyframes h1anime {
-    0% {font-variation-settings: 'wght' 400}
-    100% {font-variation-settings: 'wght' 900}
-    
+    from {
+        font-variation-settings: "wght" 400;
+    }
+    to {
+        font-variation-settings: "wght" 900;
+    }
+}
+@keyframes h1anime {
+    from {
+        font-variation-settings: "wght" 400;
+    }
+    to {
+        font-variation-settings: "wght" 900;
+    }
 }
 
 .subtitle {

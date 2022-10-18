@@ -16,8 +16,11 @@ const handleMouseMove = e => {
     changeWeight(e.clientX, e.clientY);
 }
 const changeWeight = (x, y) => {
-    const weight = x * 0.6;
-    const opsz = y * 2;
+    let weight = x * 0.6;
+    let opsz = 100 + y * 2;
+    // 限制opsz最小值以避免字形发生改变
+    const minOpsz = 411;
+    opsz <= minOpsz ? opsz = minOpsz : opsz = opsz;
     document.querySelector('#title').style.fontVariationSettings = `'wght' ${weight},'opsz' ${opsz}`;
 }
 </script>

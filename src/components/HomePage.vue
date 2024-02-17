@@ -29,13 +29,13 @@ const changeWeight = (x, y) => {
     <div class="container" v-if="loaded">
         <div class="box">
             <h1 id="title">Chris Jia</h1>
-            <div class="subtitle">is a student and a designer</div>
+            <div class="subtitle">is a dreamer and a designer</div>
             <div class="main">
                 You can find me on
                 <a class="link" href="https://weibo.com/u/6506391030">weibo</a> and
-                <a class="link" href="https://www.instagram.com/choki.redfield/">instagram</a>,
+                <a class="link" href="https://www.instagram.com/jiia.cc/">instagram</a>,
                 and see my works on
-                <a class="link" href="https://www.behance.net/Chokijf4b3">Behance</a>.
+                <a class="link" href="https://dribbble.com/chrisjia">Dribbble</a>.
                 <br />Know me more at my
                 <a class="link" href="https://blog.choki.xyz">
                     <span>blog</span>
